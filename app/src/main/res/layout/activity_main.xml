@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context="com.example.a2dam.provatema3.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dia: "
+        android:textSize="24dp"
+        android:id="@+id/txtDia"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dia"
+        android:textSize="24dp"
+        android:layout_alignBaseline="@id/txtDia"
+        android:layout_toRightOf="@id/txtDia"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes: "
+        android:textSize="24dp"
+        android:id="@+id/txtMes"
+        android:layout_below="@id/txtDia"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mes"
+        android:textSize="24dp"
+        android:layout_toRightOf="@id/txtMes"
+        android:layout_alignBaseline="@id/txtMes"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDinero"
+        android:text="Dinero: "
+        android:textSize="24dp"
+        android:layout_below="@+id/txtMes"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dinero"
+        android:textSize="24dp"
+        android:layout_alignBaseline="@id/txtDinero"
+        android:layout_toRightOf="@id/txtDinero"
+        android:layout_below="@+id/mes"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_below="@+id/txtDinero"
+        android:id="@+id/botonGuardar"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar"
+        android:layout_toRightOf="@id/botonGuardar"
+        android:id="@+id/botonMostrar"
+        android:layout_alignBaseline="@id/botonGuardar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/botonGuardar"
+        android:id="@+id/mostrarTexto"
+        android:textSize="24dp"/>
+
+
+
+
+</RelativeLayout>
